@@ -1,0 +1,92 @@
+/* layout.less */
+
+body {
+    font-family: @font-main;
+    font-size: @font-size-base;
+    color: @text-color;
+    background-color: @background-color;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: @white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: @spacing-medium;
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Navigation */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: @text-color;
+    margin-left: 20px;
+    font-weight: 600;
+
+    &:hover {
+        color: @primary-color;
+    }
+}
+
+/* Hamburger */
+
+.hamburger,
+.close {
+    display: none;
+    cursor: pointer;
+    font-size: 26px;
+    color: @text-color;
+}
+
+.close {
+    text-decoration: none;
+}
+
+.nav-menu:target .close {
+    display: block;
+}
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #c0c0c0;
+    color: @white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+}
+
+.btn {
+    .button-style();
+}

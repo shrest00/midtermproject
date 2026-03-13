@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #222222;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Navigation Links */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #222222;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.nav-menu a:hover {
+    color: #4da6ff;
+}
+
+/* Hamburger Menu  */
+.hamburger,
+.close {
+    display: none;
+    cursor: pointer;
+    font-size: 26px;
+    color: #222222;
+}
+
+/* Close Button */
+.close {
+    text-decoration: none;
+}
+
+.nav-menu:target .close {
+    display: block;
+}
+
+/*  Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url("../images/steel-service-r5Hz8iYT.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    color: #ffffff;
+    
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+}
+
+.btn {
+    background-color: #4da6ff;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3399ff;
+}
+
+.sub-head{
+    text-align: center;
+}
+/* Featured Services  */
+.featured-services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 40px 0;
+}
+
+.featured-services .service-card{
+    background-color:#ffffff;
+    border:1px solid #ddd;
+    border-radius:8px;
+    width:30%;
+    text-align:center;
+    overflow:hidden;
+    transition:transform 0.3s ease;
+}
+
+.service-card i{
+    font-size:28px;
+    margin-top:10px;
+    color:#4da6ff;
+} 
+.service-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px 8px 0 0;
+    margin-bottom:10px;
+}
+
+.service-card .btn{
+    background-color: #632905;   
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;     
+    margin-bottom: 15px;  
+}
+
+.service-card .btn:hover{
+    background-color: #e67e3f;
+}
+.featured-services .service-card:hover {
+    transform: translateY(-5px);
+}
+.services h1{
+    text-align: center;
+}
+.category h3{
+    text-align: center;
+}
+.request-service h2,p{
+    text-align: center;
+}
+.contact h2{
+    text-align: center;
+}
+
+.contact-info h1,h3,p{
+    text-align: center;
+}
+/*  Flip Cards */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.flip-card-front {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.flip-card-back {
+    background-color: #4da6ff;
+    color: #ffffff;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+/* Forms */
+form {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;  
+    overflow: auto;  
+}
+form textarea {
+    min-height: 120px;       
+    max-height: 300px;      
+    resize: vertical; 
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4da6ff;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+/* FORM */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #3399ff;
+}
+
+.checkbox-group,
+.radio-group {
+    display: flex;
+    gap: 20px; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.checkbox-group input,
+.radio-group input {
+    margin: 0 5px 0 0; 
+}
+
+footer {
+    background: #474a4d;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+
+/*  Responsive Design */
+@media (max-width: 768px) {
+    .flex-container,
+    .featured-services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Mobile navigation menu */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 260px;
+        height: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding-top: 80px;
+        transition: right 0.35s ease;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu:target {
+        right: 0;
+    }
+
+    .nav-menu a {
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    /* Close button */
+    .close {
+        display: none;
+        position: static;
+        top: 5px;
+        right: 25px;
+        font-size: 24px;
+        text-decoration: none;
+        color: #222;
+    }
+
+    .featured-services .service-card {
+        width: 80%;
+    }
+
+    .flip-card {
+        width: 80%;
+    }
+}

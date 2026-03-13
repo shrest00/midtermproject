@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhaleka Aluminium & Steel</title>
+    <link rel="icon" type="image/x-icon" href="assests/favicon_io-8/favicon-32x32.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+</head>
+<body>
+<!-- Header -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Siddhaleka Logo">
+                </div>
+                <!--try hamburger menu-->
+                <a href="#nav-menu" class="hamburger">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <nav class="nav-menu" id="nav-menu">
+                        <a href="#" class="close">
+                           <i class="fa fa-close"></i>
+                        </a>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="request.html">Request Service</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+
+    <!-- Request Form Section -->
+        <section class="request-service">
+            <h2>Request a Service</h2>
+            <p>Please fill out this form for the registration.</p>
+            <form id="request-form">
+
+            <!-- Customer Information -->
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone" required>
+
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="City/Address" required>
+                </fieldset>
+
+            <!-- Service Details -->
+                <fieldset>
+                    <legend>Service Details</legend>
+
+                    <label for="service">Service Type:</label>
+                    <select id="service" name="service">
+                        <option value="">-- Select Service --</option>
+                        <option value="aluminum">Aluminum</option>
+                        <option value="steel">Steel</option>
+                        <option value="glass">Glass</option>
+                    </select>
+
+                    <p>Additional Options:</p>
+                    <input type="checkbox" id="installation" name="options" value="installation">
+                    <label for="installation">Installation</label>
+                    <br>
+                    <input type="checkbox" id="customDesign" name="options" value="customDesign">
+                    <label for="customDesign">Custom Design</label>
+
+                    <p>Urgency:</p>
+                    <input type="radio" id="normal" name="urgency" value="normal" checked>
+                    <label for="normal">Normal</label>
+                    <br>
+                    <input type="radio" id="urgent" name="urgency" value="urgent">
+                    <label for="urgent">Urgent</label>
+                </fieldset>
+
+            <!-- Project Description -->
+                <fieldset>
+                    <legend>Project Description</legend>
+
+                    <label for="description">Describe your project:</label>
+                    <textarea id="description" name="description" placeholder="Describe your project..." required></textarea>
+                </fieldset>
+
+                <button type="submit" class="btn">Submit Request</button>
+            </form>
+        </section>
+
+    </div>
+
+<!-- Footer -->
+    <footer>
+        <div class="sub-head">
+            <h1>Siddhaleka Aluminium & Steel Udhog</h1>
+            <p>Construction Solutions</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; © 2026 Siddhaleka. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
